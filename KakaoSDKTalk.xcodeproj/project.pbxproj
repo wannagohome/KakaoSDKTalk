@@ -8,12 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		23DEAB5D251C7EF40007E436 /* KakaoSDKTalk.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DEAB5B251C7EF40007E436 /* KakaoSDKTalk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23DEAB69251C7F170007E436 /* ChannelRelations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEAB64251C7F170007E436 /* ChannelRelations.swift */; };
+		23DEAB6A251C7F170007E436 /* TalkProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEAB65251C7F170007E436 /* TalkProfile.swift */; };
+		23DEAB6B251C7F170007E436 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEAB66251C7F170007E436 /* Friends.swift */; };
+		23DEAB6C251C7F170007E436 /* MessageSendResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEAB67251C7F170007E436 /* MessageSendResult.swift */; };
+		23DEAB6D251C7F170007E436 /* TalkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEAB68251C7F170007E436 /* TalkApi.swift */; };
+		23DEAB72251C7FC20007E436 /* KakaoSDKAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAB6F251C7FC20007E436 /* KakaoSDKAuth.framework */; };
+		23DEAB73251C7FC20007E436 /* KakaoSDKAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAB6F251C7FC20007E436 /* KakaoSDKAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23DEAB74251C7FC20007E436 /* KakaoSDKCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAB70251C7FC20007E436 /* KakaoSDKCommon.framework */; };
+		23DEAB75251C7FC20007E436 /* KakaoSDKCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAB70251C7FC20007E436 /* KakaoSDKCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23DEAB76251C7FC20007E436 /* KakaoSDKTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAB71251C7FC20007E436 /* KakaoSDKTemplate.framework */; };
+		23DEAB77251C7FC20007E436 /* KakaoSDKTemplate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAB71251C7FC20007E436 /* KakaoSDKTemplate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23DEAB78251C7FC20007E436 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23DEAB75251C7FC20007E436 /* KakaoSDKCommon.framework in Embed Frameworks */,
+				23DEAB77251C7FC20007E436 /* KakaoSDKTemplate.framework in Embed Frameworks */,
+				23DEAB73251C7FC20007E436 /* KakaoSDKAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23DEAB58251C7EF40007E436 /* KakaoSDKTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KakaoSDKTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DEAB5B251C7EF40007E436 /* KakaoSDKTalk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KakaoSDKTalk.h; sourceTree = "<group>"; };
 		23DEAB5C251C7EF40007E436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DEAB64251C7F170007E436 /* ChannelRelations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelRelations.swift; sourceTree = "<group>"; };
+		23DEAB65251C7F170007E436 /* TalkProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkProfile.swift; sourceTree = "<group>"; };
+		23DEAB66251C7F170007E436 /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		23DEAB67251C7F170007E436 /* MessageSendResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSendResult.swift; sourceTree = "<group>"; };
+		23DEAB68251C7F170007E436 /* TalkApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkApi.swift; sourceTree = "<group>"; };
+		23DEAB6F251C7FC20007E436 /* KakaoSDKAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoSDKAuth.framework; path = Carthage/Build/iOS/KakaoSDKAuth.framework; sourceTree = "<group>"; };
+		23DEAB70251C7FC20007E436 /* KakaoSDKCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoSDKCommon.framework; path = Carthage/Build/iOS/KakaoSDKCommon.framework; sourceTree = "<group>"; };
+		23DEAB71251C7FC20007E436 /* KakaoSDKTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoSDKTemplate.framework; path = Carthage/Build/iOS/KakaoSDKTemplate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DEAB74251C7FC20007E436 /* KakaoSDKCommon.framework in Frameworks */,
+				23DEAB76251C7FC20007E436 /* KakaoSDKTemplate.framework in Frameworks */,
+				23DEAB72251C7FC20007E436 /* KakaoSDKAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +70,7 @@
 			children = (
 				23DEAB5A251C7EF40007E436 /* KakaoSDKTalk */,
 				23DEAB59251C7EF40007E436 /* Products */,
+				23DEAB6E251C7FC20007E436 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +85,33 @@
 		23DEAB5A251C7EF40007E436 /* KakaoSDKTalk */ = {
 			isa = PBXGroup;
 			children = (
+				23DEAB63251C7F170007E436 /* model */,
+				23DEAB68251C7F170007E436 /* TalkApi.swift */,
 				23DEAB5B251C7EF40007E436 /* KakaoSDKTalk.h */,
 				23DEAB5C251C7EF40007E436 /* Info.plist */,
 			);
 			path = KakaoSDKTalk;
+			sourceTree = "<group>";
+		};
+		23DEAB63251C7F170007E436 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				23DEAB64251C7F170007E436 /* ChannelRelations.swift */,
+				23DEAB65251C7F170007E436 /* TalkProfile.swift */,
+				23DEAB66251C7F170007E436 /* Friends.swift */,
+				23DEAB67251C7F170007E436 /* MessageSendResult.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		23DEAB6E251C7FC20007E436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23DEAB6F251C7FC20007E436 /* KakaoSDKAuth.framework */,
+				23DEAB70251C7FC20007E436 /* KakaoSDKCommon.framework */,
+				23DEAB71251C7FC20007E436 /* KakaoSDKTemplate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +136,7 @@
 				23DEAB54251C7EF40007E436 /* Sources */,
 				23DEAB55251C7EF40007E436 /* Frameworks */,
 				23DEAB56251C7EF40007E436 /* Resources */,
+				23DEAB78251C7FC20007E436 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,6 +158,7 @@
 				TargetAttributes = {
 					23DEAB57251C7EF40007E436 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -131,6 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DEAB6C251C7F170007E436 /* MessageSendResult.swift in Sources */,
+				23DEAB69251C7F170007E436 /* ChannelRelations.swift in Sources */,
+				23DEAB6B251C7F170007E436 /* Friends.swift in Sources */,
+				23DEAB6A251C7F170007E436 /* TalkProfile.swift in Sources */,
+				23DEAB6D251C7F170007E436 /* TalkApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +329,20 @@
 		23DEAB61251C7EF40007E436 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YJQB4DVQ35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KakaoSDKTalk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,22 +351,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Roomfriends.KakaoSDKTalk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		23DEAB62251C7EF40007E436 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YJQB4DVQ35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KakaoSDKTalk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,8 +383,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Roomfriends.KakaoSDKTalk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
